@@ -597,8 +597,16 @@
   .about-block .about-block-content{
     padding: 180px 0;
     text-align: center;
+    position: relative;
   }
   
+  .close-modal {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
   .hide{
     display: none;
   }
