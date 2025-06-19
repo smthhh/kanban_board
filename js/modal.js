@@ -11,8 +11,8 @@ closeBtn.addEventListener('click', () => {
     modal.classList.add('hide');
 });
 
-modal.addEventListener('click', (event) => {
-    if (event.target === modal) {
+document.addEventListener('mouseup', function (e) {
+      if (!modal.contains(e.target)) {
         modal.classList.add('hide');
-    }
+      }
 });
